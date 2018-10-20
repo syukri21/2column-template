@@ -1,0 +1,122 @@
+/*Reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Initial */
+
+body {
+	font-family: "roboto", "arial";
+	display:grid;
+	grid-template-areas : 
+	"h h"
+	"m m"
+	"f f";
+	grid-template-rows: 60px auto auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+header {
+	grid-area : h;
+	background: #414453;
+	height: 60px;
+}
+
+main {
+	grid-area: m;
+	min-height: 100vh;
+	
+}
+
+aside {
+	grid-area: s;
+	background: linear-gradient(to left top, #7376E0,#9497F4 );
+	min-height: 100vh;
+	display: none;
+}
+
+footer {
+	grid-area : f;
+	background: #414453;
+	min-height: 60px;
+}
+
+
+
+/*Header*/
+
+header {
+	display: flex;
+	align-items: center;
+}
+
+/* header .nav */
+
+header .nav {
+	flex: 1 0 auto;
+	height: 100%;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+
+}
+
+header .nav a {
+	margin-right: 30px;
+	color: white;
+}
+
+/* header .icon */
+
+
+header .icon {
+	display:flex;
+	padding: 0 10px;
+	height: 100%;
+	align-items: center;
+}
+
+header .icon > * {
+	margin-left: 20px;
+	color: white;
+}
+
+header .icon input {
+	background: none;
+	border: none;
+	color: white;
+	padding: 10px 10px;
+	outline: none;
+}
+
+header .icon input:focus-within {
+	border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+/*Responsive*/
+
+@media only screen and (min-width: 900px) {
+	body {
+		grid-template-areas : 
+		"s h h"
+		"s m m"
+		"f f f";
+		grid-template-columns : 300px auto auto;
+	}
+	aside{
+		display: block;
+	}
+}
