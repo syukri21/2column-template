@@ -1,39 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>2 Column Syukri</title>
+	<link rel="stylesheet" href="asset/fontawesome-free-5.2.0-web/css/all.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="Asset/fontawesome-free-5.2.0-web/css/all.css">
 </head>
+
 <body>
 	<header>
-		<div class="nav" >
+		<div class="bars flexsmall">
+			<div>
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+		<div class="nav flexmed">
 			<a href="#">Home</a>
 			<a href="#">About Me</a>
 			<a href="#">Contact Me</a>
 			<a href="#">Menu</a>
 		</div>
-		<div class="icon" >
-			<div class="search" >
-			<i class="fa fa-search" aria-hidden="true"></i>
-			<input type="search" placeholder="search..." >	
+		<div class="icon">
+			<div class="search">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<input type="search" placeholder="search...">
 			</div>
 			<i class="fa fa-bell" aria-hidden="true"></i>
 		</div>
 	</header>
 	<main>
-		
+		<div class="table">
+			<div class="title">
+				<span>Table Mata kuliah</span>
+			</div>
+			<div class="content">
+				<table>
+					<tr>
+						<td>Mata Kuliah</td>
+						<td>SKS</td>
+						<td>Dosen</td>
+						<td>Ruangan</td>
+					</tr>
+					<tr>
+						<td>Aljabar Linear</td>
+						<td>3</td>
+						<td>Mariza Davega</td>
+						<td>Programmer</td>
+					</tr>
+					<tr>
+						<td>Kecerdasan Buatan</td>
+						<td>3</td>
+						<td>Ahmad Zamsuri</td>
+						<td>Wireless</td>
+					</tr>
+					<tr>
+						<td>Sistem Digital</td>
+						<td>3</td>
+						<td>Sutejo</td>
+						<td>Big Data</td>
+					</tr>
+					<tr>
+						<td>Struktur Data</td>
+						<td>3</td>
+						<td>Yogi Yunefri</td>
+						<td>Wireless</td>
+					</tr>
+					<tr>
+						<td>Struktur Data</td>
+						<td>3</td>
+						<td>Yogi Yunefri</td>
+						<td>Wireless</td>
+					</tr>
+					<tr>
+						<td>Struktur Data</td>
+						<td>3</td>
+						<td>Yogi Yunefri</td>
+						<td>Wireless</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="form">
+			<div class="title">
+				<span>Form Mata Kuliah</span>
+			</div>
+			<div class="content">
+				<div class="input-fields">
+					<input type="text" name="nama" placeholder="Nama">
+					<input type="text" name="nim" placeholder="NIM">
+					<input type="text" name="matkul" placeholder="Mata Kuliah">
+					<div>
+						<select name="dropdown" id="dw">
+							<option value="" disabled selected hidden>Pilih Jumlah SKS...</option>
+							<option value="2">2 SKS</option>
+							<option value="3">3 SKS</option>
+							<option value="4">4 SKS</option>
+							<option value="6">6 SKS</option>
+						</select>
+						<i class="fas fa-arrow-alt-circle-down dropdownitem "></i>
+					</div>
+					<input type="text" name="dosen" placeholder="Dosen">
+					<input type="text" name="ruangan" placeholder="Ruangan">
+				</div>
+				<div class="action">
+					<button type="button">Simpan</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="title">
+				<span>Spesifikasi Job</span>
+			</div>
+			<div class="content">
+
+				<div class="select ">
+					<input type="radio" class="placeholder" id="plc" name="option">
+					<label class="title placeholder" for="plc">Choose your Job... </label>
+					<label class="option">
+						<input type="radio" name="option" value="1">
+						<span class="title ">Frontend</span>
+					</label>
+					<label class="option">
+						<input type="radio" name="option" value="2">
+						<span class="title ">Backend</span>
+					</label>
+					<label class="option">
+						<input type="radio" name="option" value="3">
+						<span class="title ">User Experience</span>
+					</label>
+					<label class="option">
+						<input type="radio" name="option" value="4">
+						<span class="title ">Quality Assurance</span>
+					</label>
+				</div>
+
+			</div>
+		</div>
+
 	</main>
 	<aside>
-		
+		<div class="profile">
+			<img src="img/test.jpg" alt="#">
+			<span>Syukri HSB</span>
+			<span>TI 2</span>
+		</div>
+		<div class="nav">
+			<a href="#">Tabel</a>
+			<a href="#">Form</a>
+			<a href="#">Dropdown</a>
+		</div>
 	</aside>
 	<footer>
-		
+
 	</footer>
-	
+
+	<script src="javascript/jquery.min.js"></script>
+	<script src="javascript/main.js"></script>
 </body>
+
 </html>
