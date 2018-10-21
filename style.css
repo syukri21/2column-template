@@ -416,7 +416,15 @@ table tr td {
   justify-content: flex-start;
   padding: 0 20px;
   cursor: pointer;
-  background: #898ce5;
+  background-color: #898ce5;
+}
+
+.select > label:nth-child(2) {
+  background-color: none;
+  background-position: right;
+  background-position-x: calc(100% - 20px);
+  background-repeat: no-repeat;
+  background-image: url(2ss.png);
 }
 
 .select > label:not(.placeholder):hover {
