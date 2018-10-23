@@ -67,6 +67,7 @@ aside {
   grid-area: s;
   min-height: 100vh;
   display: none;
+	background: white;
 }
 
 footer {
