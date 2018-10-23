@@ -65,9 +65,13 @@ footer {
   min-height: 60px;
 }
 
-.nav a:hover {
+.nav a {
+	 height: 100%;
+}
+
+.nav > *:hover, .nav a:hover {
   background: #404040;
-  height: 100%;
+ 
 }
 
 select {
@@ -119,12 +123,53 @@ header .nav {
   align-items: center;
 }
 
-header .nav a {
+header .nav > * {
   padding: 0 20px;
+    height: 100%;
   display: flex;
   align-items: center;
   color: white;
   font-size: 15px;
+}
+
+
+
+/* menu-hover-item */
+
+.menu-hover {
+	position: relative;
+	display: flex !important;
+	background: #414453;
+}
+
+.menu-hover {
+  width: 150px !important;;
+}
+
+
+.menu-hover-item {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+display: none;
+  z-index: 200;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+.menu-hover-item a  {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background: #414453;
+  color: white;
+}
+
+
+.menu-hover:hover  .menu-hover-item {
+  display: block !important;
+ 
 }
 
 /* header .icon */
@@ -157,6 +202,16 @@ header .icon {
 
 .icon input:focus-within {
   border-bottom: 2px solid white;
+}
+
+
+/* menu hover */
+
+
+.menu-hover {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* aside */
@@ -209,6 +264,13 @@ aside .nav a:focus-within {
   background: #8a8de611;
   border-left: 5px solid blue;
 }
+ 
+.sorotnav aside .nav a:hover,
+.sorotnav aside .nav a:focus-within 
+ {
+  background: #8a8de611;
+  border-left: 5px solid blue;
+}
 
 /* main */
 /*---------------------------------*/
@@ -237,12 +299,16 @@ main > * {
 }
 
 .form {
-  background-color: #414453;
+  background-color: white;
   grid-area: f;
 }
 
 .dropdown {
   grid-area: d;
+}
+
+.sorot {
+	background-color: #414453 !important;
 }
 
 /* table */
@@ -254,7 +320,7 @@ main > * {
 .title span {
   padding: 10px 20px;
   border-radius: 0 10px 10px 0;
-  background: linear-gradient(to left top, #414453, #404040);
+  background: linear-gradient(to left top,#414453, #414453dd);
   color: white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
@@ -266,7 +332,7 @@ main > * {
 .table table {
   width: 100%;
   margin-top: 10px;
-  background: white;
+  background: transparent;
   padding: 10px 10px 20px 10px;
 }
 
@@ -281,11 +347,15 @@ tr:not(:first-child) {
 }
 
 tr:nth-child(odd) td {
-  background: #bdbdbd44;
+  background: #898CE544;
 }
 
 tr td:nth-child(2) {
   text-align: center;
+}
+
+.sorot table tr td {
+  color: white;
 }
 
 table tr:first-child td {
@@ -303,7 +373,11 @@ table tr td {
 /* form */
 
 .form .title span {
-  background: linear-gradient(to left bottom, #8b8ee6, #8b8ee644);
+  
+}
+
+.sorot .title span {
+	background: linear-gradient(to left bottom, #8b8ee6, #8b8ee644) !important ;
 }
 
 .input-fields {
@@ -320,10 +394,15 @@ table tr td {
   margin-top: 10px;
   border: none;
   background: transparent;
-  color: white;
+  color: #333;
   font-size: 16px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #898CE5;
   outline: none;
+}
+
+.sorot .input-fields input {
+	border-bottom: 2px solid white;
+	color: white !important;
 }
 
 .action {
@@ -339,13 +418,30 @@ table tr td {
   background: transparent;
   padding: 10px;
   outline: none;
-  color: white;
-  border: 2px solid white;
+  color: #666;
+  border: 2px solid #898CE5;
   border-radius: 4px;
   width: 100%;
 }
 
+.sorot .input-fields select {
+	color: white;
+  border: 2px solid white;
+}
+
+.sorot .input-fields > div > i {
+	color: white;
+
+}
+
+
 .input-fields option {
+  background: #898CE5;
+  color: white;
+  border: none;
+}
+
+.sorot .input-fields option {
   background: #414453;
   color: white;
   border: none;
@@ -363,13 +459,13 @@ table tr td {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
-  color: white;
+  color: #444;
 }
 
 .action button {
   outline: none;
   border: none;
-  background: linear-gradient(to left bottom, #8b8ee6, #8b8ee6, #8b8ee644);
+   background: linear-gradient(to left top,#414453, #414453dd);
   color: white;
   padding: 10px 44px;
   font-size: 18px;
@@ -378,8 +474,16 @@ table tr td {
   cursor: pointer;
 }
 
+.sorot .action button {
+	background: linear-gradient(to left bottom, #8b8ee6, #8b8ee644);
+}
+
+.sorot .action button:hover {
+	background: linear-gradient(to left bottom, #8b8ee6, #8b8ee644);
+}
+
 .action button:hover {
-  background: linear-gradient(to left bottom, #8b8ee6, #8b8ee644);
+   background: linear-gradient(to left top,#414453, #414453dd,  #414453dd);
 }
 
 .action button:active {
@@ -432,6 +536,10 @@ table tr td {
   color: #414453;
 }
 
+.sorot .select > label:not(.placeholder):hover {
+  color: white;
+}
+
 .select input {
   display: none;
 }
@@ -447,6 +555,23 @@ option {
 
 .placeholder:checked ~ .option {
   display: flex;
+}
+
+
+/* footer */
+/*---------------------------------*/
+/*---------------------------------*/
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer div {
+  font-size : 14px;
 }
 
 /* responsive */
@@ -498,3 +623,5 @@ option {
     display: block;
   }
 }
+
+

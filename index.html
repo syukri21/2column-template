@@ -6,7 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>2 Column Syukri</title>
-	<link rel="stylesheet" href="asset/fontawesome-free-5.2.0-web/css/all.css">
+	<!-- <link rel="stylesheet" href="asset/fontawesome-free-5.2.0-web/css/all.css"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +23,14 @@
 			<a href="#">Home</a>
 			<a href="#">About Me</a>
 			<a href="#">Contact Me</a>
-			<a href="#">Menu</a>
+			<div  class="menu-hover"  >
+				Jurusan
+				<i class="fas fa-arrow-down" ></i>
+				<div class="menu-hover-item"  >
+					<a href="#">Teknik Informatika</a>
+					<a href="#">Sistem Informasi</a>
+				</div>
+			</div>
 		</div>
 		<div class="icon">
 			<div class="search">
@@ -48,38 +56,44 @@
 					<tr>
 						<td>Aljabar Linear</td>
 						<td>3</td>
-						<td>Mariza Davega</td>
+						<td>Mariza Devega, M. Kom</td>
 						<td>Programmer</td>
 					</tr>
 					<tr>
 						<td>Kecerdasan Buatan</td>
 						<td>3</td>
-						<td>Ahmad Zamsuri</td>
+						<td>Ahmad Zamsuri, M.Kom</td>
 						<td>Wireless</td>
 					</tr>
 					<tr>
 						<td>Sistem Digital</td>
 						<td>3</td>
-						<td>Sutejo</td>
+						<td>Sutejo. M.Kom</td>
 						<td>Big Data</td>
 					</tr>
 					<tr>
-						<td>Struktur Data</td>
+						<td>Pemograman Client Server</td>
 						<td>3</td>
-						<td>Yogi Yunefri</td>
-						<td>Wireless</td>
+						<td>M. Arif Hasan, M.Kom</td>
+						<td>LAB D</td>
+					</tr>
+					<tr>
+						<td>Pemograman Berbasis Objek</td>
+						<td>3</td>
+						<td>Bayu Febriadi, M.Kom</td>
+						<td>LAB D</td>
 					</tr>
 					<tr>
 						<td>Struktur Data</td>
 						<td>3</td>
-						<td>Yogi Yunefri</td>
+						<td>Yogi Yunefri, M.Kom</td>
 						<td>Wireless</td>
 					</tr>
-					<tr>
-						<td>Struktur Data</td>
+						<tr>
+						<td>Jaringan Komputer</td>
 						<td>3</td>
-						<td>Yogi Yunefri</td>
-						<td>Wireless</td>
+						<td>Dafwen Toresa, M.Kom</td>
+						<td>LAB A</td>
 					</tr>
 				</table>
 			</div>
@@ -115,28 +129,28 @@
 
 		<div class="dropdown">
 			<div class="title">
-				<span>Spesifikasi Job</span>
+				<span>Peminatan</span>
 			</div>
 			<div class="content">
 
 				<div class="select ">
 					<input type="radio" class="placeholder" id="plc" name="option">
-					<label class="title placeholder" for="plc">Choose your Job... </label>
+					<label class="title placeholder" for="plc">Pilih Peminatan.. !</label>
 					<label class="option">
 						<input type="radio" name="option" value="1">
-						<span class="title ">Frontend</span>
+						<span class="title ">Administrator Keamanan dan Jaringan</span>
 					</label>
 					<label class="option">
 						<input type="radio" name="option" value="2">
-						<span class="title ">Backend</span>
+						<span class="title ">Analis dan Administrator Basisdata</span>
 					</label>
 					<label class="option">
 						<input type="radio" name="option" value="3">
-						<span class="title ">User Experience</span>
+						<span class="title ">Software Engeenering</span>
 					</label>
 					<label class="option">
 						<input type="radio" name="option" value="4">
-						<span class="title ">Quality Assurance</span>
+						<span class="title ">Vision Intelligent</span>
 					</label>
 				</div>
 
@@ -148,8 +162,9 @@
 		<div class="profile">
 			<img src="img/test.jpg" alt="#">
 			<span>Syukri HSB</span>
-			<span>TI 2</span>
+			
 		</div>
+
 		<div class="nav">
 			<a href="#">Tabel</a>
 			<a href="#">Form</a>
@@ -157,7 +172,9 @@
 		</div>
 	</aside>
 	<footer>
-
+		<div>
+			Copyright &copy; Syukri Husaibatul Khairi HSB			
+		</div>
 	</footer>
 
 	<script src="javascript/jquery.min.js"></script>
