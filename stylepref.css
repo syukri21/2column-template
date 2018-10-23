@@ -31,6 +31,7 @@ option:not(:checked) {
 body {
   font-family: "arial", "Roboto";
   display: -ms-grid;
+	background: #E5E5E5;
   display: grid;
       grid-template-areas:
     "h h"
